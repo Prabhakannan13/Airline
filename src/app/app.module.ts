@@ -6,10 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ViewwallairlineComponent } from './viewwallairline/viewwallairline.component';
+import { ViewallpassengersComponent } from './viewallpassengers/viewallpassengers.component';
 
 const appRoutes:Routes=[
   {
     path:"",component:ViewwallairlineComponent
+  },
+  {
+    path:"viewallpassengers",component:ViewallpassengersComponent
   },
 ]
 
@@ -17,7 +21,8 @@ const appRoutes:Routes=[
   declarations: [
     AppComponent,
     NavbarComponent,
-    ViewwallairlineComponent
+    ViewwallairlineComponent,
+    ViewallpassengersComponent
   ],
   imports: [
     BrowserModule,
